@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment Variables
+.env
+
+# Python cache
+.pytest_cache/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Model files (large)
+outputs/models/*.pth
+outputs/models/*.pkl
+
+# Generated synthetic datasets
+outputs/generated_data/*.csv
+
+# Metrics (optional)
+outputs/metrics/*.json
+
+# Logs
+*.log
+
+# Streamlit cache
+.streamlit/secrets.toml 
