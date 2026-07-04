@@ -110,13 +110,14 @@ if st.button(
             f"Epoch {epoch+1}/{epochs} | Loss = {loss.item():.4f}"
         )
 
-    torch.save(
+   import os
 
-        vae.state_dict(),
+os.makedirs("outputs/models", exist_ok=True)
 
-        "outputs/models/vae_model.pth"
-
-    )
+torch.save(
+    model.state_dict(),
+    "outputs/models/vae_model.pth"
+)
 
     st.success(
         "VAE Training Completed"
@@ -167,3 +168,4 @@ if st.button(
     st.write(
         synthetic_df.shape
     )
+
